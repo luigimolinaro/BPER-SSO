@@ -11,7 +11,7 @@ ${CLI} manage login-to-ocp --token=${OCP_TOKEN} --server=${OCP_URL}
 
 # APPLY-CRIO
 ${CLI} manage apply-crio \
-  --openshift_type=${OPENSHIFT_TYPE}
+  --openshift_type=${OPENSHIFT_TYPE} \
   --force=true
 # OPTIONAL (Updating the global image pull secret) 
 ${CLI} manage add-icr-cred-to-global-pull-secret \
